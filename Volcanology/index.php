@@ -1209,7 +1209,7 @@ if (!isset($_SESSION['valid'])) {
             <ul>
               <li>South Cotabato, Gensan 9500</li>
               <li>+63 965 918 3687</li>
-              <li>bernardporlas93@gmail.com</li>
+              <li>jonespatrickbaclaan0423@gmail.com</li>
             </ul>
           </div>
         </div>
