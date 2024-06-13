@@ -54,7 +54,7 @@
                             
                                 ";
 
-                            echo "<a href='index2.php'><button class='btn btn-success'>Login Now</button>"; 
+                            echo "<a href='admin_login.php'><button class='btn btn-success'>Login Now</button>"; 
                 }
             } else {
             ?>

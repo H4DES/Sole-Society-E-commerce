@@ -149,37 +149,37 @@ if(isset($_POST['submit'])) {
             <form action="" method="post">
                 <div class="field input">
                     <label for="name">Volcano Name</label>
-                    <input type="text" name="name" id="name" value="<?php echo isset($volcano_name) ? htmlspecialchars($volcano_name) : ''; ?>" required>
+                    <input type="text" name="name" id="name" value="<?php echo isset($volcano_name) ? htmlspecialchars($volcano_name) : ''; ?>">
                 </div>
 
                 <div class="field input">
                     <label for="location">Volcano Location</label>
-                    <input type="text" name="location" id="location" value="<?php echo isset($location) ? htmlspecialchars($location) : ''; ?>" required>
+                    <input type="text" name="location" id="location" value="<?php echo isset($location) ? htmlspecialchars($location) : ''; ?>">
                 </div>
 
                 <div class="field input">
                     <label for="volcano_type">Volcano Type</label>
-                    <input type="text" name="volcano_type" id="volcano_type" value="<?php echo isset($volcano_type) ? htmlspecialchars($volcano_type) : ''; ?>" required>
+                    <input type="text" name="volcano_type" id="volcano_type" value="<?php echo isset($volcano_type) ? htmlspecialchars($volcano_type) : ''; ?>" >
                 </div>
 
                 <div class="field input">
                     <label for="status">Volcano Status</label>
-                    <input type="text" name="status" id="status" value="<?php echo isset($status) ? htmlspecialchars($status) : ''; ?>" required>
+                    <input type="text" name="status" id="status" value="<?php echo isset($status) ? htmlspecialchars($status) : ''; ?>" >
                 </div>
 
                 <div class="field input">
                     <label for="last_eruption">Volcano Last Eruption</label>
-                    <input type="text" name="last_eruption" id="last_eruption" value="<?php echo isset($last_eruption) ? htmlspecialchars($last_eruption) : ''; ?>" required>
+                    <input type="text" name="last_eruption" id="last_eruption" value="<?php echo isset($last_eruption) ? htmlspecialchars($last_eruption) : ''; ?>" >
                 </div>
 
                 <div class="field input">
                     <label for="eruption_times">Volcano Eruption Times</label>
-                    <input type="text" name="eruption_times" id="eruption_times" value="<?php echo isset($eruption_times) ? htmlspecialchars($eruption_times) : ''; ?>" required>
+                    <input type="text" name="eruption_times" id="eruption_times" value="<?php echo isset($eruption_times) ? htmlspecialchars($eruption_times) : ''; ?>" >
                 </div>
 
                 <div class="field input">
                     <label for="eruption_type">Volcano Eruption Type</label>
-                    <input type="text" name="eruption_type" id="eruption_type" value="<?php echo isset($eruption_type) ? htmlspecialchars($eruption_type) : ''; ?>" required>
+                    <input type="text" name="eruption_type" id="eruption_type" value="<?php echo isset($eruption_type) ? htmlspecialchars($eruption_type) : ''; ?>" >
                 </div>
 
                 <div class="field">

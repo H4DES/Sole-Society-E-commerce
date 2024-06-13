@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//login-register/style2.css">
+    <link rel="stylesheet" href="./login-register/style2.css">
     <link rel="stylesheet" href="./login-register/bootstrap/bootstrap.min.css"/>
     <title>Admin Login</title>
 </head>
@@ -15,13 +15,14 @@
         <div class="box form-box">
             <?php
                 include("./login-register/config.php");
-                if(isset($_POST['submit'])){
-                    $email = mysqli_real_escape_string($con, $_POST['username']);
+                if (isset($_POST['submit'])) {
+                    $username = mysqli_real_escape_string($con, $_POST['username']);
                     $password = mysqli_real_escape_string($con, $_POST['password']);
 
                     $result = mysqli_query($con, "SELECT * FROM admin WHERE username='$username' AND password='$password'") or die("Select Error");
                     $row = mysqli_fetch_assoc($result);
-                    if(is_array($row) && !empty($row)){
+
+                    if (is_array($row) && !empty($row)) {
                         $_SESSION['valid'] = $row['username'];
                         $_SESSION['username'] = $row['username'];
                         $_SESSION['admin_id'] = $row['admin_id'];
@@ -35,13 +36,12 @@
                                 });
                               </script>";
                     } else {
-                        // Display error message if login fails
                         echo "<div class='alert alert-danger d-flex align-items-center' role='alert'>
                                 <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Danger:'><use xlink:href='#exclamation-triangle-fill'/></svg>
                                 <div>
                                     Wrong Username or Password!
                                 </div>
-                            </div>";
+                              </div>";
                         echo "<a href='admin_login.php'><button class='btn btn-danger'>Go Back</button></a>";
                     }
                 } else {
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="field">
-                    <input type="submit" class="btn btn-primary" name="submit" value="Login" required>
+                    <input type="submit" class="btn btn-primary" name="submit" value="Login">
                 </div>
 
                 <div class="links">
