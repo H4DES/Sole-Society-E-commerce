@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,600;1,200&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    line-height: 1.7;
+}
+
+.nav-item a{
+    color: #ffffff;
+}
+
+/* NAVBAR AREA */
+.navbar{
+    --bs-navbar-brand-margin-end: rem;
+}
+.btn-brand{
+    color: white;
+}
+
+.btn-brand:hover{
+    color: rgb(14, 98, 255);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #000000;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:hover{
+    color: rgb(0, 139, 219);
+}
+
+img {
+    width: 100%;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover{
+    transition: all 0.4s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.2);
+}
+/* PROFILE IMAGE */
+
+.profile-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .profile-image {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .btn-secondary {
+    --bs-btn-bg: #ced4da;
+  }
+/* CARD TEXT AREA */
+.card-text{
+    line-height: 1.8rem;
+}
+
+/* BUTTON AREA */
+.btn{
+    border: 0;
+    padding: 10px 15px;
+}
+
+.btn-outline-dark{
+    border: 1px solid black;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* SLIDER AREA */
+/*It works when i download the image from canva to htdocs folder*/
+
+.slide-1{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Mayon\ Background.png);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Matutum\ Background.png);
+}
+
+.slide-3{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Taal\ Volcano\ Background.png);
+}
+
+.slide-4{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Manahaw\ Background.png);
+}
+
+.slide-5{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Makiling\ Background.png);
+}
+
+.slide-6{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(./images/Mount\ Malindang.png);
+}
+
+#heroSlider h6::after, 
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #000000;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 45px;
+    height: 70px;
+    margin: auto;
+}
+
+/*About Us*/
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: rgb(8, 8, 8);
+}
+
+.team .member{
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #cfcfcf;
+}
+
+.team .member .teampic{
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.member-info{
+    padding-left: 20px;
+}
+
+/*Intro Text / Best Courses*/
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#icon {
+
+    transition: transform 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Ensure proper hover behavior */
+  }
+
+  #icon:hover {
+    transform: scale(1.2); /* Scale up when hovering */
+    transform-origin: center; /* Ensure scaling from the center */
+  }
+
+/*Menu*/
+#courses .nav-pills .nav-link{
+    background-color: rgb(0, 0, 0);
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+}
+
+#courses .nav-pills .nav-link.active{
+    color: rgb(14, 98, 255);
+}
+
+.menu-item .stars{
+    color: rgb(14, 98, 255);
+}
+
+/*BLOG POST*/
+.blog-post img {
+    width: 40%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post img {
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding-top: 50px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
